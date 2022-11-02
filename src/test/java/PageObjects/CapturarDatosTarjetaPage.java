@@ -1,11 +1,11 @@
 package PageObjects;
 
+import Definitions.CurrentWebDriver;
 import Support.CElement;
 import Support.UtilsBrowser;
 
 import java.util.Set;
 
-import static Definitions.Hooks.driver;
 import static Uix.CapturarTarjetaUix.*;
 public class CapturarDatosTarjetaPage {
 
@@ -18,9 +18,9 @@ public class CapturarDatosTarjetaPage {
 
 
     public void CambiarVentana(){
-        Set<String> indetificadores= driver.getWindowHandles();
+        Set<String> indetificadores= CurrentWebDriver.getInstance().getWebDriver().getWindowHandles();
         for(String identificador: indetificadores){
-            driver.switchTo().window(identificador);
+            CurrentWebDriver.getInstance().getWebDriver().switchTo().window(identificador);
         }
         try {
             Thread.sleep(1000);
@@ -31,11 +31,11 @@ public class CapturarDatosTarjetaPage {
     }
 
     public void cerrarVentana(){
-        driver.close();
+        CurrentWebDriver.getInstance().getWebDriver().close();
         if (UtilsBrowser.Browser.equals("firefox")){
             CambiarVentana();
         }else{
-            driver.switchTo().window("");
+            CurrentWebDriver.getInstance().getWebDriver().switchTo().window("");
         }
 
     }

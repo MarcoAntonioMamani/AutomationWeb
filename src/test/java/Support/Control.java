@@ -1,5 +1,6 @@
 package Support;
 
+import Definitions.CurrentWebDriver;
 import Definitions.Hooks;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static Definitions.Hooks.driver;
 
 public class Control {
 
@@ -23,12 +23,12 @@ public class Control {
     private WebDriverWait wait;
     public Control(By locator){
         this.locator=locator;
-        wait=new WebDriverWait(driver, 30);
-        PageFactory.initElements(driver,this);
+        wait=new WebDriverWait(CurrentWebDriver.getInstance().getWebDriver(), 30);
+        PageFactory.initElements(CurrentWebDriver.getInstance().getWebDriver(),this);
     }
 
     public void findControl()  {
-        this.control= driver.findElement(this.locator);
+        this.control= CurrentWebDriver.getInstance().getWebDriver().findElement(this.locator);
     }
 
     public void click()  {
@@ -48,10 +48,10 @@ public class Control {
         this.findControl();
         wait.until(ExpectedConditions.visibilityOf(control));
         try{
-            Actions hover = new Actions(driver);
+            Actions hover = new Actions(CurrentWebDriver.getInstance().getWebDriver());
             hover.moveToElement(control).build().perform();
         }catch (Exception e){
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", control);
+            ((JavascriptExecutor) CurrentWebDriver.getInstance().getWebDriver()).executeScript("arguments[0].scrollIntoView(true);", control);
         }
         return this.control.getText();
     }
