@@ -1,12 +1,11 @@
 package PageObjects;
 
-import Definitions.Hooks;
 import Support.CElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import Support.UtilsBrowser;
 
 import java.util.Set;
+
+import static Definitions.Hooks.driver;
 import static Uix.CapturarTarjetaUix.*;
 public class CapturarDatosTarjetaPage {
 
@@ -19,20 +18,26 @@ public class CapturarDatosTarjetaPage {
 
 
     public void CambiarVentana(){
-        Set<String> indetificadores= Hooks.driver.getWindowHandles();
-       // int ventana=0;
+        Set<String> indetificadores= driver.getWindowHandles();
         for(String identificador: indetificadores){
-
-            Hooks.driver.switchTo().window(identificador);
-        //    ventana++;
-             //  System.out.println(ventana+":"+identificador+"   ");
-            //   System.out.println("Lenght = "+indetificadores.size());
+            driver.switchTo().window(identificador);
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void cerrarVentana(){
-        Hooks.driver.close();
-        Hooks.driver.switchTo().window("");
+        driver.close();
+        if (UtilsBrowser.Browser.equals("firefox")){
+            CambiarVentana();
+        }else{
+            driver.switchTo().window("");
+        }
+
     }
     public void leerNumeroTarjeta(){
         cardNumber=obtenerValor(txtCardNumber,"Card Number:-");

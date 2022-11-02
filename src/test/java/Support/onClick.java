@@ -15,7 +15,7 @@ public class onClick {
 
     public onClick(WebDriver d){
         driver=d;
-        wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait=new WebDriverWait(driver, 20);
         PageFactory.initElements(driver,this);
 
     }

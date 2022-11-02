@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 600.302 s <<< FAILURE! - in TestSuite
+Support.runTest.runScenario["Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito"](2)  Time elapsed: 23.481 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.0.13', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27520, moz:profile: C:\Users\MARCO\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 347f62ff-a2d4-451e-97fa-92d74eaeb2a4
+*** Element info: {Using=xpath, value=//a[text()='Generate Card Number']}
+
+Support.runTest.runScenario["Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito"](3)  Time elapsed: 11.758 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.0.13', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31016, moz:profile: C:\Users\MARCO\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b7824c7-4b7b-45c6-bfbe-21c37946a049
+*** Element info: {Using=xpath, value=//a[text()='Generate Card Number']}
+
