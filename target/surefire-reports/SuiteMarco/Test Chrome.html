@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 02 10:04:49 BOT 2022</td>
+<td>Started on:</td><td>Sun Nov 06 21:43:38 BOT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59893 ms)</td>
+<tr><td>Total time:</td><td>88 seconds (88777 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,64 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Support.runTest.runScenario()'><b>runScenario</b><br>Test class: Support.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Check card number is 16 digits!}
+  (Session info: chrome=107.0.5304.88): Check card number is 16 digits!
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T84OJOU&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MARCO\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ee6246fef24d6a9ba81326aa1e343b0
+*** Element info: {Using=xpath, value=//h2[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Support.Control.findControl(Control.java:31)
+	at Support.Control.isEquals(Control.java:42)
+	at PageObjects.CapturarRegistroCompraPage.leerPagoExitoso(CapturarRegistroCompraPage.java:9)
+	at Definitions.CarritoDefinitions.validoElPagoExitoso(CarritoDefinitions.java:89)
+	at ?.Valido el pago exitoso &quot;Payment successfull!&quot;(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace77709438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77709438'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Check card number is 16 digits!}
+  (Session info: chrome=107.0.5304.88): Check card number is 16 digits!
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T84OJOU&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MARCO\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ee6246fef24d6a9ba81326aa1e343b0
+*** Element info: {Using=xpath, value=//h2[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Support.Control.findControl(Control.java:31)
+	at Support.Control.isEquals(Control.java:42)
+	at PageObjects.CapturarRegistroCompraPage.leerPagoExitoso(CapturarRegistroCompraPage.java:9)
+	at Definitions.CarritoDefinitions.validoElPagoExitoso(CarritoDefinitions.java:89)
+	at ?.Valido el pago exitoso &quot;Payment successfull!&quot;(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:23)
+</pre></div></td>
+<td>26</td>
+<td>Support.runTest@3aeaafa6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,18 +135,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='Support.runTest.runScenario()'><b>runScenario</b><br>Test class: Support.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comprar solo un producto", "Comprar articulo con una tarjeta de Credito"</td>
 <td></td>
-<td>15</td>
-<td>Support.runTest@1a3869f4</td></tr>
+<td>26</td>
+<td>Support.runTest@3aeaafa6</td></tr>
 <tr>
 <td title='Support.runTest.runScenario()'><b>runScenario</b><br>Test class: Support.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito"</td>
 <td></td>
-<td>21</td>
-<td>Support.runTest@1a3869f4</td></tr>
-<tr>
-<td title='Support.runTest.runScenario()'><b>runScenario</b><br>Test class: Support.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito"</td>
-<td></td>
-<td>22</td>
-<td>Support.runTest@1a3869f4</td></tr>
+<td>34</td>
+<td>Support.runTest@3aeaafa6</td></tr>
 </table><p>
 </body>
 </html>

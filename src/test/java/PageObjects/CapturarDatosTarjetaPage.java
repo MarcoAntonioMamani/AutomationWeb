@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Definitions.CurrentWebDriver;
+import Definitions.Hooks;
 import Support.CElement;
 import Support.UtilsBrowser;
 
@@ -18,9 +19,9 @@ public class CapturarDatosTarjetaPage {
 
 
     public void CambiarVentana(){
-        Set<String> indetificadores= CurrentWebDriver.getInstance().getWebDriver().getWindowHandles();
+        Set<String> indetificadores= Hooks.getDriver().getWindowHandles();
         for(String identificador: indetificadores){
-            CurrentWebDriver.getInstance().getWebDriver().switchTo().window(identificador);
+            Hooks.getDriver().switchTo().window(identificador);
         }
         try {
             Thread.sleep(1000);
@@ -31,11 +32,11 @@ public class CapturarDatosTarjetaPage {
     }
 
     public void cerrarVentana(){
-        CurrentWebDriver.getInstance().getWebDriver().close();
+       Hooks.getDriver().close();
         if (UtilsBrowser.Browser.equals("firefox")){
             CambiarVentana();
         }else{
-            CurrentWebDriver.getInstance().getWebDriver().switchTo().window("");
+            Hooks.getDriver().switchTo().window("");
         }
 
     }

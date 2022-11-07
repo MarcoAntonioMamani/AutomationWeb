@@ -9,6 +9,7 @@ D:\Banco Fassil\Practica Selenium\src\test\java\Factory\ChromeDriverCreator.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Support\UtilsBrowser.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Support\runTest.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\BalanceTarjetaUix.java
+D:\Banco Fassil\Practica Selenium\src\test\java\Factory\RemoteFirefoxDriverCreator.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Factory\WebDriverFactory.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\CapturarTarjetaUix.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Factory\EdgeDriverCreator.java
@@ -19,6 +20,7 @@ D:\Banco Fassil\Practica Selenium\src\test\java\Support\CElement.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\ValidarTarjeta\CapturarRegistroCompraLct.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Definitions\CurrentWebDriver.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Support\Control.java
+D:\Banco Fassil\Practica Selenium\src\test\java\Factory\RemoteEdgeDriverCreator.java
 D:\Banco Fassil\Practica Selenium\src\test\java\PageObjects\CompraPage.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\ValidarTarjeta\CapturarRegistroCompraUix.java
 D:\Banco Fassil\Practica Selenium\src\test\java\TestNG\testNgIntroduction.java
@@ -33,4 +35,5 @@ D:\Banco Fassil\Practica Selenium\src\test\java\PageObjects\CapturarDatosTarjeta
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\ComprarUix.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\MenuLct.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Definitions\Hooks.java
+D:\Banco Fassil\Practica Selenium\src\test\java\Factory\RemoteChromeDriverCreator.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Factory\FirefoxDriverCreator.java

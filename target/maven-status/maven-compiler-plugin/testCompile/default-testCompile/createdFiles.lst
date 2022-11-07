@@ -2,9 +2,11 @@ PageObjects\BalanceTarjetaPage.class
 Factory\FirefoxDriverCreator.class
 TestNG\TestNgExample.class
 Definitions\CarritoDefinitions.class
+Factory\RemoteEdgeDriverCreator.class
 Uix\BalanceTarjetaUix.class
 PageObjects\CompraPage.class
 Uix\ValidarTarjeta\CapturarRegistroCompraLct.class
+Factory\RemoteFirefoxDriverCreator.class
 Uix\ValidarTarjeta\CapturarRegistroCompraUix.class
 Definitions\CurrentWebDriver.class
 PageObjects\CapturarDatosTarjetaPage.class
@@ -23,6 +25,7 @@ Uix\MenuUIx.class
 PageObjects\ViewBalanceTarjetaPage.class
 Support\onClick.class
 Uix\ViewBalanceTarjetaLCT.class
+Factory\RemoteChromeDriverCreator.class
 Support\runTest.class
 Uix\CapturarTarjetaUix.class
 Uix\CapturarTarjetaLct.class

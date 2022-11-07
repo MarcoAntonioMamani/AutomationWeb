@@ -3,22 +3,9 @@ package Support;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import org.junit.AfterClass;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
-/*
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        features = "src/test/resources/features",
-        glue = "Definitions",  //el nombre de las clases implementadas de los features
-        // plugin = {"json:target/cucumber-reporte/cucumber.json","html:target/cucumber-report/cucumber-report.html"},
-        plugin = {"json:src/test/resource/report/cucumber_report.json"},
-        tags = "not @Pruebita"
-)*/
 
 
 @Test
@@ -31,9 +18,27 @@ public class runTest extends AbstractTestNGCucumberTests {
 
 
     @Parameters({ "BrowserType" })
-    @BeforeTest
+   // @DataProvider(parallel = true)
+    @BeforeMethod(alwaysRun = true)
     public static void setUpScenario(String browser) {
         UtilsBrowser.Browser=browser;
+       // return new Object[0];
+    }
+
+    @Parameters({ "BrowserType" })
+    // @DataProvider(parallel = true)
+    @BeforeClass(alwaysRun = true)
+    public static void setUpScenario02(String browser) {
+        UtilsBrowser.Browser=browser;
+        // return new Object[0];
+    }
+
+    @Parameters({ "BrowserType" })
+    // @DataProvider(parallel = true)
+    @BeforeTest(alwaysRun = true)
+    public static void setUpScenario03(String browser) {
+        UtilsBrowser.Browser=browser;
+        // return new Object[0];
     }
 
     @AfterSuite

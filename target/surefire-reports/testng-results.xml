@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteMarco" duration-ms="65063" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:46:12 BOT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@3aeaafa6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@7a30d1e6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test Firefox" duration-ms="65063" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:46:12 BOT">
+      <class name="Support.runTest">
+        <test-method status="PASS" signature="setUpScenario03(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario03" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpScenario03 -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpClass" is-config="true" duration-ms="16" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpScenario02(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario02" is-config="true" duration-ms="4" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpScenario02 -->
+        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="16555" started-at="2022-11-06T21:45:07 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:45:24 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comprar solo un producto"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="23958" started-at="2022-11-06T21:45:24 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:45:48 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:24 BOT" finished-at="2022-11-06T21:45:24 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpScenario -->
+        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="4" started-at="2022-11-06T21:45:48 BOT" finished-at="2022-11-06T21:45:48 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="24518" started-at="2022-11-06T21:45:48 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:46:12 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Support.runTest@28ac3dc3]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2022-11-06T21:46:12 BOT" finished-at="2022-11-06T21:46:12 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="finish()[pri:0, instance:Support.runTest@28ac3dc3]" name="finish" is-config="true" duration-ms="8" started-at="2022-11-06T21:46:12 BOT" finished-at="2022-11-06T21:46:12 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- Support.runTest -->
+    </test> <!-- Test Firefox -->
+  </suite> <!-- SuiteMarco -->
+</testng-results>

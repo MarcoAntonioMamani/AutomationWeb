@@ -2,6 +2,7 @@ package Factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class EdgeDriverCreator extends WebDriverCreator{
@@ -9,6 +10,6 @@ public class EdgeDriverCreator extends WebDriverCreator{
     public WebDriver createWebDriver() {
         WebDriverManager.edgedriver().setup();
        // System.setProperty("webdriver.gecko.driver","resource/geckodriver.exe");
-        return new FirefoxDriver();
+        return new EdgeDriver();
     }
 }

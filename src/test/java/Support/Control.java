@@ -23,12 +23,12 @@ public class Control {
     private WebDriverWait wait;
     public Control(By locator){
         this.locator=locator;
-        wait=new WebDriverWait(CurrentWebDriver.getInstance().getWebDriver(), 30);
-        PageFactory.initElements(CurrentWebDriver.getInstance().getWebDriver(),this);
+        wait=new WebDriverWait(Hooks.getDriver(), 30);
+        PageFactory.initElements(Hooks.getDriver(),this);
     }
 
     public void findControl()  {
-        this.control= CurrentWebDriver.getInstance().getWebDriver().findElement(this.locator);
+        this.control= Hooks.getDriver().findElement(this.locator);
     }
 
     public void click()  {
@@ -48,10 +48,10 @@ public class Control {
         this.findControl();
         wait.until(ExpectedConditions.visibilityOf(control));
         try{
-            Actions hover = new Actions(CurrentWebDriver.getInstance().getWebDriver());
+            Actions hover = new Actions(Hooks.getDriver());
             hover.moveToElement(control).build().perform();
         }catch (Exception e){
-            ((JavascriptExecutor) CurrentWebDriver.getInstance().getWebDriver()).executeScript("arguments[0].scrollIntoView(true);", control);
+            ((JavascriptExecutor)Hooks.getDriver()).executeScript("arguments[0].scrollIntoView(true);", control);
         }
         return this.control.getText();
     }
