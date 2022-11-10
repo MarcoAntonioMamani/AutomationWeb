@@ -11,6 +11,7 @@ Uix\ValidarTarjeta\CapturarRegistroCompraUix.class
 Definitions\CurrentWebDriver.class
 PageObjects\CapturarDatosTarjetaPage.class
 Factory\WebDriverCreator.class
+Support\waitUntilElement.class
 Definitions\Hooks.class
 PageObjects\CapturarRegistroCompraPage.class
 Support\UtilsBrowser.class

@@ -11,7 +11,6 @@ public class ChromeDriverCreator extends WebDriverCreator {
         //System.setProperty("webdriver.chrome.driver","resource/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation","load-extension"});
-
         return new ChromeDriver(options);
     }
 }

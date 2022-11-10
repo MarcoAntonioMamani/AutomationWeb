@@ -1,6 +1,7 @@
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\BalanceTarjetaLct.java
 D:\Banco Fassil\Practica Selenium\src\test\java\PageObjects\ViewBalanceTarjetaPage.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Uix\ComprarLct.java
+D:\Banco Fassil\Practica Selenium\src\test\java\Support\waitUntilElement.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Definitions\CarritoDefinitions.java
 D:\Banco Fassil\Practica Selenium\src\test\java\PageObjects\ValidarTarjetaPage.java
 D:\Banco Fassil\Practica Selenium\src\test\java\Support\onClick.java

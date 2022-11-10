@@ -17,29 +17,22 @@ import java.io.IOException;
 public class runTest extends AbstractTestNGCucumberTests {
 
 
-    @Parameters({ "BrowserType" })
-   // @DataProvider(parallel = true)
-    @BeforeMethod(alwaysRun = true)
-    public static void setUpScenario(String browser) {
+
+    @BeforeClass
+    @Parameters({"BrowserType"})
+    public void setUrl(String browser)
+    {
         UtilsBrowser.Browser=browser;
-       // return new Object[0];
     }
 
-    @Parameters({ "BrowserType" })
-    // @DataProvider(parallel = true)
-    @BeforeClass(alwaysRun = true)
-    public static void setUpScenario02(String browser) {
-        UtilsBrowser.Browser=browser;
-        // return new Object[0];
+
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
     }
 
-    @Parameters({ "BrowserType" })
-    // @DataProvider(parallel = true)
-    @BeforeTest(alwaysRun = true)
-    public static void setUpScenario03(String browser) {
-        UtilsBrowser.Browser=browser;
-        // return new Object[0];
-    }
+
 
     @AfterSuite
     public static void finish() throws IOException {
@@ -52,7 +45,7 @@ public class runTest extends AbstractTestNGCucumberTests {
         }catch (Exception ex){
             ex.printStackTrace();
         }*/
-
+/*
         try{
             System.out.println("Generando el Reporte");
             String [] cmd={"powershell.exe","/","allure serve"};
@@ -61,7 +54,7 @@ public class runTest extends AbstractTestNGCucumberTests {
 
         }catch (Exception ex){
             ex.printStackTrace();
-        }
+        }*/
     }
 
 

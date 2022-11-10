@@ -37,10 +37,14 @@ public class Hooks {
    // @BeforeTest(alwaysRun = true)
     public static void setUp() throws Exception {  //Metodo antes de que inicie
         String browserType= UtilsBrowser.Browser;
+        if (browserType==""){
+            browserType="Chrome";
+        }
         webDriverThreadLocal.set(WebDriverFactory.getDriver(browserType,""));
         //CurrentWebDriver.getInstance().setWebDriver(WebDriverFactory.getDriver(browserType,seleniumGridURL));
        // CurrentWebDriver.getInstance().getWebDriver().manage().window().maximize();
         webDriverThreadLocal.get().manage().window().maximize();
+
     }
 
 
@@ -50,7 +54,7 @@ public class Hooks {
     public static void tearDown(Scenario scenario){
 
         if (scenario.isFailed()){
-            byte[] screenshot=((TakesScreenshot) CurrentWebDriver.getInstance().getWebDriver()).getScreenshotAs(OutputType.BYTES);
+            byte[] screenshot=((TakesScreenshot) Hooks.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","Failed");
            // Allure.addAttachment("Failed", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
 

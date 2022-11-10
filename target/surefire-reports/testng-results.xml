@@ -1,55 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteMarco" duration-ms="65063" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:46:12 BOT">
+  <suite name="SuiteMarco" duration-ms="122190" started-at="2022-11-10T13:41:19 BOT" finished-at="2022-11-10T13:43:21 BOT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@3aeaafa6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@7a30d1e6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@37d31475]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@44c8afef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@371a67ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Firefox" duration-ms="65063" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:46:12 BOT">
+    <test name="Test Chrome" duration-ms="36275" started-at="2022-11-10T13:41:19 BOT" finished-at="2022-11-10T13:41:55 BOT">
       <class name="Support.runTest">
-        <test-method status="PASS" signature="setUpScenario03(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario03" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpScenario03 -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpClass" is-config="true" duration-ms="16" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Support.runTest@37d31475]" name="setUpClass" is-config="true" duration-ms="653" started-at="2022-11-10T13:41:19 BOT" finished-at="2022-11-10T13:41:20 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setUpScenario02(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario02" is-config="true" duration-ms="4" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
+        <test-method status="PASS" signature="setUrl(java.lang.String)[pri:0, instance:Support.runTest@37d31475]" name="setUrl" is-config="true" duration-ms="7" started-at="2022-11-10T13:41:20 BOT" finished-at="2022-11-10T13:41:20 BOT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpScenario02 -->
-        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:07 BOT" finished-at="2022-11-06T21:45:07 BOT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="16555" started-at="2022-11-06T21:45:07 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:45:24 BOT">
+        </test-method> <!-- setUrl -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@37d31475]" name="runScenario" duration-ms="24707" started-at="2022-11-10T13:41:20 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:41:45 BOT">
           <params>
             <param index="0">
               <value>
@@ -65,7 +43,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="23958" started-at="2022-11-06T21:45:24 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:45:48 BOT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@37d31475]" name="runScenario" duration-ms="20234" started-at="2022-11-10T13:41:20 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:41:40 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MARCO\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58698}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38aa67d467ec8e48c37d46f7e2b4c4bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MARCO\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58698}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38aa67d467ec8e48c37d46f7e2b4c4bf
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at Support.Control.getText(Control.java:57)
+at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+at PageObjects.CapturarDatosTarjetaPage.leerNumeroTarjeta(CapturarDatosTarjetaPage.java:48)
+at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:41)
+at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@37d31475]" name="runScenario" duration-ms="15294" started-at="2022-11-10T13:41:40 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:41:55 BOT">
           <params>
             <param index="0">
               <value>
@@ -81,49 +114,229 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="0" started-at="2022-11-06T21:45:24 BOT" finished-at="2022-11-06T21:45:24 BOT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpScenario -->
-        <test-method status="PASS" signature="setUpScenario(java.lang.String)[pri:0, instance:Support.runTest@28ac3dc3]" name="setUpScenario" is-config="true" duration-ms="4" started-at="2022-11-06T21:45:48 BOT" finished-at="2022-11-06T21:45:48 BOT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@28ac3dc3]" name="runScenario" duration-ms="24518" started-at="2022-11-06T21:45:48 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-06T21:46:12 BOT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Cuando Realizo una compra de productos"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Support.runTest@28ac3dc3]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2022-11-06T21:46:12 BOT" finished-at="2022-11-06T21:46:12 BOT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Support.runTest@37d31475]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2022-11-10T13:41:55 BOT" finished-at="2022-11-10T13:41:55 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="finish()[pri:0, instance:Support.runTest@28ac3dc3]" name="finish" is-config="true" duration-ms="8" started-at="2022-11-06T21:46:12 BOT" finished-at="2022-11-06T21:46:12 BOT">
+      </class> <!-- Support.runTest -->
+    </test> <!-- Test Chrome -->
+    <test name="Test Edge" duration-ms="37006" started-at="2022-11-10T13:41:56 BOT" finished-at="2022-11-10T13:42:33 BOT">
+      <class name="Support.runTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Support.runTest@44c8afef]" name="setUpClass" is-config="true" duration-ms="16" started-at="2022-11-10T13:41:56 BOT" finished-at="2022-11-10T13:41:56 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUrl(java.lang.String)[pri:0, instance:Support.runTest@44c8afef]" name="setUrl" is-config="true" duration-ms="0" started-at="2022-11-10T13:41:56 BOT" finished-at="2022-11-10T13:41:56 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUrl -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@44c8afef]" name="runScenario" duration-ms="24613" started-at="2022-11-10T13:41:56 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:42:20 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comprar solo un producto"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@44c8afef]" name="runScenario" duration-ms="20695" started-at="2022-11-10T13:41:56 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:42:16 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58907}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\MARCO\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb29260d04bd7b18bb9a2c10a7ac6b8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58907}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\MARCO\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb29260d04bd7b18bb9a2c10a7ac6b8f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at Support.Control.getText(Control.java:57)
+at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+at PageObjects.CapturarDatosTarjetaPage.leerCodigoCvv(CapturarDatosTarjetaPage.java:52)
+at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:40)
+at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@44c8afef]" name="runScenario" duration-ms="16256" started-at="2022-11-10T13:42:16 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:42:33 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Support.runTest@44c8afef]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2022-11-10T13:42:33 BOT" finished-at="2022-11-10T13:42:33 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Support.runTest -->
+    </test> <!-- Test Edge -->
+    <test name="Test Firefox" duration-ms="48718" started-at="2022-11-10T13:42:33 BOT" finished-at="2022-11-10T13:43:21 BOT">
+      <class name="Support.runTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Support.runTest@371a67ec]" name="setUpClass" is-config="true" duration-ms="8" started-at="2022-11-10T13:42:33 BOT" finished-at="2022-11-10T13:42:33 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUrl(java.lang.String)[pri:0, instance:Support.runTest@371a67ec]" name="setUrl" is-config="true" duration-ms="0" started-at="2022-11-10T13:42:33 BOT" finished-at="2022-11-10T13:42:33 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUrl -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@371a67ec]" name="runScenario" duration-ms="26159" started-at="2022-11-10T13:42:33 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:42:59 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Web element reference not seen before: 69ab9086-63c3-45c0-865a-b4532496e205
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2216, moz:profile: C:\Users\MARCO\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d65667-782e-45e2-814b-a7d065d8e67f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Web element reference not seen before: 69ab9086-63c3-45c0-865a-b4532496e205
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T84OJOU', ip: '192.168.29.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2216, moz:profile: C:\Users\MARCO\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d65667-782e-45e2-814b-a7d065d8e67f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at Support.Control.getText(Control.java:57)
+at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+at PageObjects.CapturarDatosTarjetaPage.leerCodigoCvv(CapturarDatosTarjetaPage.java:52)
+at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:40)
+at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@371a67ec]" name="runScenario" duration-ms="30202" started-at="2022-11-10T13:42:33 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:43:03 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comprar solo un producto"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Support.runTest@371a67ec]" name="runScenario" duration-ms="22542" started-at="2022-11-10T13:42:59 BOT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T13:43:21 BOT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cuando Realizo una compra de productos"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Comprar articulo con una tarjeta de Credito"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Support.runTest@371a67ec]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2022-11-10T13:43:21 BOT" finished-at="2022-11-10T13:43:21 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="finish()[pri:0, instance:Support.runTest@371a67ec]" name="finish" is-config="true" duration-ms="1" started-at="2022-11-10T13:43:21 BOT" finished-at="2022-11-10T13:43:21 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->

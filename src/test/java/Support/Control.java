@@ -27,6 +27,9 @@ public class Control {
         PageFactory.initElements(Hooks.getDriver(),this);
     }
 
+    public By getLocator(){
+        return locator;
+    }
     public void findControl()  {
         this.control= Hooks.getDriver().findElement(this.locator);
     }
@@ -34,13 +37,13 @@ public class Control {
     public void click()  {
 
         this.findControl();
-        wait.until(ExpectedConditions.elementToBeClickable(control));
+        wait.until(ExpectedConditions.visibilityOf(control));
         this.control.click();
     }
 
     public void isEquals(String mensaje){
         this.findControl();
-        wait.until(ExpectedConditions.elementToBeClickable(control));
+        wait.until(ExpectedConditions.visibilityOf(control));
         Assert.assertEquals(mensaje,control.getText());
     }
     public String getText()  {

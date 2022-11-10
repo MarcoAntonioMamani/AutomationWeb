@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SuiteMarco">
-              <span class="suite-name border-passed">SuiteMarco</span>
+              <span class="suite-name border-failed">SuiteMarco</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteMarco" class="hide-methods failed suite-SuiteMarco"> (hide)</a> <!-- hide-methods failed suite-SuiteMarco -->
+                      <a href="#" panel-name="suite-SuiteMarco" class="show-methods failed suite-SuiteMarco"> (show)</a> <!-- show-methods failed suite-SuiteMarco -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteMarco">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteMarco -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +124,11 @@
                       <a href="#" panel-name="suite-SuiteMarco" class="show-methods passed suite-SuiteMarco"> (show)</a> <!-- show-methods passed suite-SuiteMarco -->
                     </span>
                     <div class="method-list-content passed suite-SuiteMarco">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Comprar solo un producto&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
@@ -115,6 +144,16 @@
                         <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Comprar solo un producto&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Comprar solo un producto&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteMarco" title="Support.runTest" hash-for-method="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-SuiteMarco -->
                   </li>
                 </ul>
@@ -127,12 +166,125 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteMarco" class="panel SuiteMarco">
+          <div class="suite-SuiteMarco-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Support.runTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T84OJOU&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MARCO\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58698}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38aa67d467ec8e48c37d46f7e2b4c4bf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at Support.Control.getText(Control.java:57)
+	at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+	at PageObjects.CapturarDatosTarjetaPage.leerNumeroTarjeta(CapturarDatosTarjetaPage.java:48)
+	at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:41)
+	at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T84OJOU&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.35, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58907}, msedge: {msedgedriverVersion: 107.0.1418.35 (806ca5c53c4f..., userDataDir: C:\Users\MARCO\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb29260d04bd7b18bb9a2c10a7ac6b8f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at Support.Control.getText(Control.java:57)
+	at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+	at PageObjects.CapturarDatosTarjetaPage.leerCodigoCvv(CapturarDatosTarjetaPage.java:52)
+	at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:40)
+	at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Web element reference not seen before: 69ab9086-63c3-45c0-865a-b4532496e205
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T84OJOU&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2216, moz:profile: C:\Users\MARCO\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d65667-782e-45e2-814b-a7d065d8e67f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at Support.Control.getText(Control.java:57)
+	at PageObjects.CapturarDatosTarjetaPage.obtenerValor(CapturarDatosTarjetaPage.java:70)
+	at PageObjects.CapturarDatosTarjetaPage.leerCodigoCvv(CapturarDatosTarjetaPage.java:52)
+	at Definitions.CarritoDefinitions.capturamosDatosDeLaTarjeta(CarritoDefinitions.java:40)
+	at ✽.capturamos datos de la tarjeta(file:///D:/Banco%20Fassil/Practica%20Selenium/src/test/resources/features/carrito.feature:9)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteMarco-class-failed -->
           <div class="suite-SuiteMarco-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Support.runTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Comprar solo un producto&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
@@ -163,6 +315,26 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Comprar solo un producto&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Cuando Realizo una compra de productos&quot;, &quot;Comprar articulo con una tarjeta de Credito&quot;)">
+                  </a> <!-- runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SuiteMarco-class-passed -->
         </div> <!-- panel SuiteMarco -->
@@ -174,22 +346,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SuiteMarco&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Chrome&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SuiteMarco&quot; parallel=&quot;classes&quot; data-provider-thread-count=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Chrome&quot; parallel=&quot;classes&quot;&gt;
     &lt;parameter name=&quot;BrowserType&quot; value=&quot;Chrome&quot;/&gt;
     &lt;parameter name=&quot;seleniumGridUrl&quot; value=&quot;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Support.runTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Chrome --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Edge&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Edge&quot; parallel=&quot;classes&quot;&gt;
     &lt;parameter name=&quot;BrowserType&quot; value=&quot;Internet Explorer&quot;/&gt;
     &lt;parameter name=&quot;seleniumGridUrl&quot; value=&quot;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Support.runTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Edge --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Firefox&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test Firefox&quot; parallel=&quot;classes&quot;&gt;
     &lt;parameter name=&quot;BrowserType&quot; value=&quot;firefox&quot;/&gt;
     &lt;parameter name=&quot;seleniumGridUrl&quot; value=&quot;&quot;/&gt;
     &lt;classes&gt;
@@ -247,24 +419,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Support.runTest')
-data.setCell(0, 3, 24518);
+data.setCell(0, 3, 30202);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Support.runTest')
-data.setCell(1, 3, 23958);
+data.setCell(1, 3, 26159);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Support.runTest')
-data.setCell(2, 3, 16555);
+data.setCell(2, 3, 24707);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'Support.runTest')
+data.setCell(3, 3, 24613);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Support.runTest')
+data.setCell(4, 3, 22542);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Support.runTest')
+data.setCell(5, 3, 20695);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Support.runTest')
+data.setCell(6, 3, 20234);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'Support.runTest')
+data.setCell(7, 3, 16256);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'Support.runTest')
+data.setCell(8, 3, 15294);
 window.suiteTableData['SuiteMarco']= { tableData: data, tableDiv: 'times-div-SuiteMarco'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-SuiteMarco">
               </div> <!-- times-div-SuiteMarco -->
             </div> <!-- times-div -->
@@ -291,131 +487,87 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Support.runTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpScenario03(Chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpScenario03(Internet Explorer)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-name">setUrl(Chrome)</span>
+                <span class="method-start">653 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpScenario02(Internet Explorer)</span>
-                <span class="method-start">798 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpScenario02(Chrome)</span>
-                <span class="method-start">802 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Chrome)</span>
-                <span class="method-start">818 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Internet Explorer)</span>
-                <span class="method-start">818 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">822 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">822 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Internet Explorer)</span>
-                <span class="method-start">26788 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">26789 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Chrome)</span>
-                <span class="method-start">27509 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">27509 ms</span>
+                <span class="method-start">689 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Chrome)</span>
-                <span class="method-start">54485 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">54485 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(Internet Explorer)</span>
-                <span class="method-start">59106 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">59121 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">88749 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpScenario03(firefox)</span>
-                <span class="method-start">88833 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">88833 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpScenario02(firefox)</span>
-                <span class="method-start">88849 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(firefox)</span>
-                <span class="method-start">88853 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">88853 ms</span>
+                <span class="method-start">689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">20942 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">91113 ms</span>
+                <span class="method-start">36238 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(firefox)</span>
-                <span class="method-start">105408 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">36391 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUrl(Internet Explorer)</span>
+                <span class="method-start">36407 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">105408 ms</span>
+                <span class="method-name">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">36424 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpScenario(firefox)</span>
-                <span class="method-start">129370 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">36428 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
-                <span class="method-start">129374 ms</span>
+                <span class="method-start">57124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">153892 ms</span>
+                <span class="method-start">73381 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">73443 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUrl(firefox)</span>
+                <span class="method-start">73451 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Comprar solo un producto", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">73453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">73453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Cuando Realizo una compra de productos", "Comprar articulo con una tarjeta de Credito")</span>
+                <span class="method-start">99613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">122156 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">finish</span>
-                <span class="method-start">153928 ms</span>
+                <span class="method-start">122169 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
