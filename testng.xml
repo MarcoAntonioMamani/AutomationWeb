@@ -16,6 +16,7 @@
             <class name = "Support.runTest"/>
         </classes>
     </test>
+    
     <test name = "Test Firefox">
         <parameter name="BrowserType" value="firefox"/>
         <parameter name="seleniumGridUrl" value=""/>
