@@ -22,10 +22,6 @@ public class ValidarTarjetaPage {
     cbAnioExpiracion.selectValue(Integer.parseInt(CapturarDatosTarjetaPage.fechaExpiracionAnio)+"");
     txtCvvCode.setText(CapturarDatosTarjetaPage.codigoCvv);
     btnClickPay.click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
     }
 }

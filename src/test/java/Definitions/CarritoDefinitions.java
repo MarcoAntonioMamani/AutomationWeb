@@ -35,7 +35,7 @@ public class CarritoDefinitions {
     }
 
     @And("capturamos datos de la tarjeta")
-    public void capturamosDatosDeLaTarjeta() {
+    public void capturamosDatosDeLaTarjeta() throws Exception {
          capturarDatosTarjetaPage.CambiarVentana();
          capturarDatosTarjetaPage.leerCodigoCvv();
          capturarDatosTarjetaPage.leerNumeroTarjeta();
@@ -51,7 +51,7 @@ public class CarritoDefinitions {
     }
 
     @And("ingreso el dato de la tarjeta y doy clic")
-    public void ingresoElDatoDeLaTarjetaYDoyClic() {
+    public void ingresoElDatoDeLaTarjetaYDoyClic() throws Exception {
         viewBalanceTarjetaPage.ingresarNumeroTarjeta(capturarDatosTarjetaPage.cardNumber);
         viewBalanceTarjetaPage.ClickBusqueda();
     }
@@ -62,7 +62,7 @@ public class CarritoDefinitions {
     }
 
     @And("capturo el mensaje de {string}")
-    public void capturoElMensajeDe(String mensaje) {
+    public void capturoElMensajeDe(String mensaje) throws Exception {
         balanceTarjetaPage.capturarAnyTransaction(mensaje);
     }
 

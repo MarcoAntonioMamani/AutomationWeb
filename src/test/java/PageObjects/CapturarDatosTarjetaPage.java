@@ -1,12 +1,16 @@
 package PageObjects;
 
+import Definitions.CurrentWebDriver;
 import Definitions.Hooks;
 import Support.CElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import Support.UtilsBrowser;
+import Support.waitUntilElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Set;
+
+import static Uix.CapturarTarjetaLct.fechaExpiracion;
 import static Uix.CapturarTarjetaUix.*;
 public class CapturarDatosTarjetaPage {
 
@@ -19,38 +23,50 @@ public class CapturarDatosTarjetaPage {
 
 
     public void CambiarVentana(){
-        Set<String> indetificadores= Hooks.driver.getWindowHandles();
-       // int ventana=0;
+        Set<String> indetificadores= Hooks.getDriver().getWindowHandles();
         for(String identificador: indetificadores){
-
-            Hooks.driver.switchTo().window(identificador);
-        //    ventana++;
-             //  System.out.println(ventana+":"+identificador+"   ");
-            //   System.out.println("Lenght = "+indetificadores.size());
+            Hooks.getDriver().switchTo().window(identificador);
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void cerrarVentana(){
-        Hooks.driver.close();
-        Hooks.driver.switchTo().window("");
+       Hooks.getDriver().close();
+        if (UtilsBrowser.Browser.equals("firefox")){
+            CambiarVentana();
+        }else{
+            Hooks.getDriver().switchTo().window("");
+        }
+
     }
-    public void leerNumeroTarjeta(){
+    public void leerNumeroTarjeta() throws Exception {
         cardNumber=obtenerValor(txtCardNumber,"Card Number:-");
     }
 
-    public void leerCodigoCvv(){
+    public void leerCodigoCvv() throws Exception {
         codigoCvv=obtenerValor(txtCodigoCvv,"CVV:-");
     }
-    public void leerFechaExpiracion(){
+    public void leerFechaExpiracion() throws Exception {
+       /* private WebDriverWait wait;
+        wait=new WebDriverWait(Hooks.getDriver(), 30);
+        wait.until(ExpectedConditions.visibilityOf(txtFechaExpiracion.));
+*/
+        waitUntilElement.isPresent(fechaExpiracion);
         String value=obtenerValor(txtFechaExpiracion,"Exp:-");
         fechaExpiracionMes=value.substring(0,value.indexOf("/"));
         fechaExpiracionAnio=value.substring(value.indexOf("/")+1,value.length());
     }
-    public void leerMontoLimite(){
+    public void leerMontoLimite() throws Exception {
         limiteCredito=obtenerValor(txtLimiteCredito,"$");
     }
 
-    public String obtenerValor(CElement element, String texto){
+    public String obtenerValor(CElement element, String texto) throws Exception {
+
        return  element.getText().replace(texto,"").trim();
     }
 }

@@ -1,3 +1,5 @@
+@LoginPage @TestNG
+@severity=blocker
 Feature:  Comprar articulo con una tarjeta de Credito
 
 
@@ -22,5 +24,4 @@ Feature:  Comprar articulo con una tarjeta de Credito
     Examples:
       | cant     |
       | 1        |
-      | 9        |
       | 4        |

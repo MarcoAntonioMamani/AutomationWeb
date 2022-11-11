@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="URL" value="http://automationpractice.com/index.php"></parameter>
+    <test  name="test on Chrome">
+        <parameter name="BrowserType" value="Chrome"></parameter>
+        <classes>
+            <class name="TestNG.TestNgExample">
+            <methods>
+                <include name="searchBlouse"/>
+            </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test  name="test on Firefox">
+        <parameter name="BrowserType" value="firefox"></parameter>
+        <classes>
+            <class name="TestNG.TestNgExample">
+                <methods>
+                    <include name="searchBlouse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test  name="test on IE">
+        <parameter name="BrowserType" value="Internet Explorer"></parameter>
+        <classes>
+            <class name="TestNG.TestNgExample">
+                <methods>
+                    <include name="searchBlouse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,28 +1,42 @@
 package Support;
 
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.AfterClass;
-import org.junit.runner.RunWith;
-import org.omg.SendingContext.RunTime;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
+
+@Test
+@CucumberOptions(plugin = { "pretty"},
+        tags = "",
         features = "src/test/resources/features",
-        glue = "Definitions",  //el nombre de las clases implementadas de los features
-        // plugin = {"json:target/cucumber-reporte/cucumber.json","html:target/cucumber-report/cucumber-report.html"},
-        plugin = {"json:src/test/resource/report/cucumber_report.json"},
-        tags = "not @Pruebita"
-)
-public class runTest {
+        glue = "Definitions")
+
+public class runTest extends AbstractTestNGCucumberTests {
 
 
-    @AfterClass
+
+    @BeforeClass
+    @Parameters({"BrowserType"})
+    public void setUrl(String browser)
+    {
+        UtilsBrowser.Browser=browser;
+    }
+
+
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+
+
+
+    @AfterSuite
     public static void finish() throws IOException {
-        try{
+        /*try{
             System.out.println("Generando el Reporte");
             String [] cmd={"cmd.exe","/c","npm run report"};
             Runtime.getRuntime().exec(cmd);
@@ -30,7 +44,17 @@ public class runTest {
 
         }catch (Exception ex){
             ex.printStackTrace();
-        }
+        }*/
+/*
+        try{
+            System.out.println("Generando el Reporte");
+            String [] cmd={"powershell.exe","/","allure serve"};
+            Runtime.getRuntime().exec(cmd);
+            System.out.println("Reporte Generado Correctamente");
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }*/
     }
 
 

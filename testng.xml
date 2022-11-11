@@ -1,0 +1,28 @@
+<?xml version = "1.0"encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "SuiteMarco" thread-count="2" data-provider-thread-count="2">
+    <test name = "Test Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
+        <parameter name="seleniumGridUrl" value=""/>
+        <classes>
+            <class name = "Support.runTest"/>
+        </classes>
+    </test>
+
+    <test name = "Test Edge">
+        <parameter name="BrowserType" value="Internet Explorer"/>
+        <parameter name="seleniumGridUrl" value=""/>
+        <classes>
+            <class name = "Support.runTest"/>
+        </classes>
+    </test>
+    <test name = "Test Firefox">
+        <parameter name="BrowserType" value="firefox"/>
+        <parameter name="seleniumGridUrl" value=""/>
+        <classes>
+            <class name = "Support.runTest"/>
+        </classes>
+    </test>
+
+
+</suite>
